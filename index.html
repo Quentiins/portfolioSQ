@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Portfolio SQ</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>Portfolio SEURT Quentin</h1>
+        <nav id="header-nav">
+            <a href="./index.html" class="btn">Accueil</a>
+            <a href="#experiences" class="btn">Expériences</a>
+            <a href="#competences" class="btn">Compétences</a>
+            <a href="#projets" class="btn"> Mes projets</a>
+            <a href="#contact" class="btn">Contact</a>
+        </nav>
+        <nav id="mobile-nav">
+            <a href="./index.html" class="btn">Accueil</a>
+            <a href="#experiences" class="btn">Expériences</a>
+            <a href="#competences" class="btn">Compétences</a>
+            <a href="#projets" class="btn">Projets</a>
+            <a href="#contact" class="btn">Contact</a>
+        </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <!-- Présentation -->
+        <section>
+            <hr>
+            <h2>Bienvenue !</h2>
+            <p>
+                Âgé de 22 ans et titulaire du BAC Sciences et Technologies du Management et de Gestion – spécialité : Systèmes d’Informations et de Gestion (STMG -SIG), j’aspire à rentrer dans le monde du travail et plus précisément celui de développeur web.
+            </p>
+            <img id="picture" src="./pictures/Snapchat.jpg" alt="">
+            <hr>
+            <h2 id="experiences">Expériences / Formations</h2>
+                <ul>
+                    <li>
+                        Formation intégrateur front-end à l’Institut Marie Thérèse Solacroup à Dinard (Bretagne 2021-2022).
+                    </li>
+                    
+                    <li>
+                        Stage de 2 semaines chez Interencheres situé à Vern-sur-Seiche (Bretagne 2020).
+                    </li>
+                    
+                    <li>
+                        Apprenti Boulanger pendant 3 mois à Château-Malo (Bretagne 2019).
+                    </li>
+                    
+                    <li>
+                        Terminale STMG option SIG au Lycée Jean Rostand à Caen (Normandie 2016-2017).
+                    </li>
+                </ul>
+                <hr>
+                <h2 id="competences">Compétences</h2>
+                <img class="mobile-img" src="./pictures/html.svg" alt="HTML">
+                <img class="mobile-img" src="./pictures/css.svg" alt="CSS">
+                <img class="mobile-img" src="./pictures/js.svg" alt="Javascript">
+                <img class="mobile-img" src="./pictures/c.svg" alt="C">
+                <img class="mobile-img" src="./pictures/python.svg" alt="Python">
+                <img class="mobile-img" src="./pictures/figma.svg" alt="Figma">
+                <hr>
+                <h2 id="projets">Mes projets</h2>
+                <p>Actuellement en formation intégrateur front-end à l’Institut Marie Thérèse Solacroup à Dinard , j’aspire à me perfectionner dans ce domaine pour à l’avenir faire une autre formation mais cette fois-ci en back-end. Avec ces 2 formations , j’aimerais devenir développeur full stack et pouvoir être en freelance. </p>
+                <!-- Le slider -->
+                <div class="slideshow-container">
+                    <!-- Les images de mes projets avec les pages -->
+                    <div class="slider fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img class="slide" src="./pictures/C.PNG" alt="" style="width:100%">
+                        <div class="text">Langage C</div>
+                    </div>
+  
+                    <div class="slider mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img class="slide" src="./pictures/python.PNG" alt="" style="width:100%">
+                        <div class="text">Python</div>
+                    </div>
+  
+                    <div class="slider mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img class="slide" src="./pictures/projetmer.PNG" alt="" style="width:100%">
+                        <div class="text">Projet Mer</div>
+                    </div>
+
+                    <div class="slider mySlides fade">
+                        <div class="numbertext">4 / 4</div>
+                        <img class="slide" src="./pictures/Figma.PNG" alt="" style="width:100%">
+                        <div class="text">Projet boîte mail</div>
+                    </div>
+  
+                    <!-- Flèche retour en arrière et suivante -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+  
+                <!-- Les petits ronds -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+                <hr>
+        </section>
+        <!-- FOOTER -->
+        <footer id="contact">
+                <nav id="footer-nav">
+                    <a href="./index.html">Accueil</a>
+                    <a href="#experiences">Expériences</a>
+                    <a href="#competences">Compétences</a>
+                    <a href="#projets"> Mes projets</a>
+                </nav>
+                <div class="logo">
+                    <span><a href="https://www.linkedin.com/in/quentin-seurt-523302223/"><img  src="./pictures/linkedin.svg" alt="" /></a></span>
+                    <span><a href="mailto:quentseurt@hotmail.fr"><img  src="./pictures/outlook.svg" alt="" /></a></span>
+                    <span><a href="https://github.com/Quentiins"><img  src="./pictures/github.svg" alt="" /></a></span>
+                </div>
+                <h3>Vous pouvez aussi me contacter via ce formulaire</h3>
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mknywqeg" method="post">
+                    <fieldset id="fs-frm-inputs">
+                      <label>Votre prénom : </label>
+                      <input type="text" name="nom" placeholder="prenom" required="">
+                      <br>
+                      <label id="mail">Email : </label>
+                      <input type="email" name="mail" placeholder="email@domain.tld" required=""><br>
+                      <br>
+                      <label>Message : </label><br>
+                      <textarea rows="10" cols="50" name="message" placeholder="Veuillez entrer un message" required=""></textarea>
+                      <input type="hidden" name="blocm" value="Contact Form Submission">
+                    </fieldset>
+                    <button type="submit" id="btnsub">Envoyer</button>
+                  </form>
+        </footer>
+    </main>
+</body>
+</html>
