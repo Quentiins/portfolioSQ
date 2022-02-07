@@ -1,95 +1,95 @@
 /* Initialisation des couleurs récurentes que je vais utiliser */
 :root{
-    --midblue: midnightblue; 
-    --white: #FFFFFF;
-    --lightblue: lightblue;
-    --lightgrey: lightgrey;
-    --lightcoral: lightcoral;
+  --midblue: midnightblue; 
+  --white: #FFFFFF;
+  --lightblue: lightblue;
+  --lightgrey: lightgrey;
+  --lightcoral: lightcoral;
 }
 
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
 }
 
 /* Type , taille de la police et couleur de fond */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    background-image: url(./pictures/fond.jpg);
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-image: url(./pictures/fond.jpg);
+}
 
 
 /* HEADER */
 
 /* Le texte est blanc et est aligné au centre. Les détails de la bordure et la hauteur */
 header{
-    text-align: center;
-    color: white;
-    border: 1px solid var(--lightblue);
-    height: 30vh;
-    }
+  text-align: center;
+  color: white;
+  border: 3px solid var(--lightgrey);
+  height: 35vh;
+  }
 
 /* L'espace au dessus des h1 */
 h1{
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 /* Les détail de la navbar , elle est au centre , espacée avec un espacement au dessus. Le texte est centré. */
 #header-nav{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    padding-top: 60px;
-    text-align: center;
-    font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 60px;
+  text-align: center;
+  font-size: 1.1em;
 }
 
 #mobile-nav{
-  visibility: hidden;
+visibility: hidden;
 }
 
 /* Position dans la page et couleur des boutons */
 .btn{
-    position: relative;
-    z-index: 1;
-    color: #23303E;
+  position: relative;
+  z-index: 1;
+  color: #23303E;
 }
 
 /* Couleur du texte dans les boutons quand on passe dessus */
 .btn:hover{
-    color: var(--white);
+  color: var(--white);
 }
 
 /* Emplacement des boutons avec couleur de fond et transition/transformation quand on passe la souris dessus */
 .btn::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    background-color: var(--lightgrey);
-    z-index: -1;
-    height: 50px;
-    width: 120px;
-    border-radius: 30px;
-    transform: translate(-50%, -50%);
-    transition: background-color 0.3s ease;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--lightgrey);
+  z-index: -1;
+  height: 50px;
+  width: 120px;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease;
 }
 
 /* Couleur des boutons quand on passe la souris dessus */
 .btn:hover::before{
-    background-color: var(--lightblue);
+  background-color: var(--lightblue);
 }
 
 .btn-burger{
-  display: none;
+display: none;
 }
 
 .mobile-nav{
-  display: none;
+display: none;
 }
 
 
@@ -97,35 +97,296 @@ h1{
 
 /* Texte centré , couleur blanche et espacement de toutes les sections */
 section {
-    text-align: center;
-    padding: 70px;
-    color: var(--white);
-  }
+  text-align: center;
+  padding: 70px;
+  color: var(--white);
+}
 
-  /* Espacement , taille de police et texte souligné pour les h2 */
+/* Espacement , taille de police et texte souligné pour les h2 */
 h2 {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    text-align: center;
-    padding-bottom: 15px;
-    padding-top: 35px;
-    text-decoration: underline;
-    color: var(--white);
-  }
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 35px;
+  text-decoration: underline;
+  color: var(--white);
+}
 
 /* Espacement , hauteur et bordure de ma tête */
 #picture{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    max-width:540px;
-    height:auto;
-    border-radius: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width:540px;
+  height:auto;
+  border-radius: 100%;
+}
+
+/* Téléchargement de mon cv en pdf */
+#cv{
+  display: flex;
+  justify-content: center;
+  font-size: 1.3em;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 /* Espacement entre les listes à puces */
 ul{
-    padding-top: 30px;
-    padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Espacement au dessus et en dessous des logos HTML CSS etc */
+.mobile-img{
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+* {box-sizing:border-box}
+
+.slide{
+  padding-top: 30px;
+}
+/* Taille , position et marge des slides */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+
+/* Flèches retour en arrière / suivante */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Emplacement flèche retour en arrière */
+.prev{
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Emplacement flèche suivante */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* Quand on met la souris sur les flèches , le fond devient bleu clair */
+.prev:hover, .next:hover {
+background-color: var(--lightblue);
+}
+
+/* Taille , emplacement et fond du texte */
+.text {
+
+background-color: var(--lightblue);
+color:var(--lightcoral);
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 4px;
+width: 100%;
+text-align: center;
+}
+
+/* Nombre 1 à 4 : couleur , taille , emplacement */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Les petits ronds pour passer à l'image suivante ou d'avant */
+.dot {
+cursor: pointer;
+margin-top: 30px;
+height: 15px;
+width: 15px;
+margin: 30px 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+/* Couleur du fond des petits ronds */
+.active, .dot:hover {
+background-color: var(--lightgrey);
+}
+
+/* Durée et type d'animation pour le slide */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+/* L'opacité */
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/* FOOTER */
+
+/* Couleur du fond et espacement du footer */
+footer{
+  background-color: var(--lightgrey);
+  padding-bottom: 30px;
+}
+
+/* Espacement , couleur et suppression des propriétés des liens cliquables */
+footer a{
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Emplacement , dimension et taille des élément de la navbar du footer */
+#footer-nav{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* Emplacement des logos réseaux */
+.logo{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+h3 {
+font-size: 1.1em;
+text-transform: uppercase;
+text-align: center;
+padding-bottom: 15px;
+padding-top: 20px;
+text-decoration: underline;
+color: black;
+}
+
+/* Alignement du texte du formulaire */
+form{
+  text-align: center;
+}
+
+/* Taille du boutton envoyer */
+#btnsub{
+  height: 30px;
+  width: 10%;
+}
+
+/* Responsive tablette */
+
+@media screen and (max-width: 760px){
+
+/* Type , taille de police et image de fond */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  background-image: url(./pictures/fond.jpg);
+}
+
+/* Espacement et couleur des paragraphes */
+p{
+padding-top: 20px;
+padding-bottom: 20px;
+color: var(--white);
+}
+
+/* Alignement et couleur du texte , détail de la bordure , hauteur et longueur du header */
+header{
+  text-align: center;
+  color: white;
+  border: 3px solid var(--lightgrey);
+  height: 20vh;
+  width: 380px;
+}
+
+/* Taille du h1 dans le header */
+header h1{
+  font-size: 150%;
+}
+
+/* Couleur et suppression du soulignement des " mots " cliquables */
+#mobile-nav a{
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Taille du texte des boutons */
+.btn{
+  font-size: 50%;
+}
+
+/* Les boutons sont invisibles sur mobile  */
+.btn::before{
+  visibility: hidden;
+}
+
+/* La navbar du header est invisible sur mobile */
+#header-nav{
+  visibility: hidden;
+}
+
+/* La navbar du mobile , visible , centrée et espacée. Taille et emplacement de la police */
+#mobile-nav{
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 60px;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: -5rem;
+}
+
+/* Espacement , taille , bordure et emplacement de ma photo */
+#picture{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width:350px;
+  height:auto;
+  border-radius: 100%;
+  display: flex;
+  transform:translateX(-50%);
+  margin-left: 50%;
+  
+}
+
+/* Espacement en dessous de compétences */
+#competences{
+  margin-bottom: 2%;
 }
 
 /* Espacement au dessus et en dessous des logos HTML CSS etc */
@@ -134,284 +395,51 @@ ul{
   margin-bottom: 20px;
 }
 
-* {box-sizing:border-box}
-
-.slide{
-    padding-top: 30px;
-}
-/* Taille , position et marge des slides */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-
-/* Flèches retour en arrière / suivante */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Emplacement flèche retour en arrière */
-.prev{
-    left: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/* Emplacement flèche suivante */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* Quand on met la souris sur les flèches , le fond devient bleu clair */
-.prev:hover, .next:hover {
-  background-color: var(--lightblue);
-}
-
-/* Taille , emplacement et fond du texte */
-.text {
-
-background-color: var(--lightblue);
-  color:var(--lightcoral);
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 4px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Nombre 1 à 4 : couleur , taille , emplacement */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Les petits ronds pour passer à l'image suivante ou d'avant */
-.dot {
-  cursor: pointer;
-  margin-top: 30px;
-  height: 15px;
-  width: 15px;
-  margin: 30px 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-/* Couleur du fond des petits ronds */
-.active, .dot:hover {
-  background-color: var(--lightgrey);
-}
-
-/* Durée et type d'animation pour le slide */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-/* L'opacité */
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* FOOTER */
-
-/* Couleur du fond et espacement du footer */
-footer{
-    background-color: var(--lightgrey);
-    padding-bottom: 30px;
-}
-
-/* Espacement , couleur et suppression des propriétés des liens cliquables */
-footer a{
-    margin-bottom: 30px;
-    text-decoration: none;
-    color: var(--white);
-}
-
-/* Emplacement , dimension et taille des élément de la navbar du footer */
-#footer-nav{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    padding-top: 30px;
-    text-align: center;
-    font-size: 1.1em;
-}
-
-/* Emplacement des logos réseaux */
-.logo{
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-}
-
-h3 {
-  font-size: 1.1em;
-  text-transform: uppercase;
-  text-align: center;
-  padding-bottom: 15px;
-  padding-top: 20px;
-  text-decoration: underline;
-  color: var(--white);
-}
-
-/* Alignement du texte du formulaire */
-form{
-    text-align: center;
-}
-
-/* Taille du boutton envoyer */
-#btnsub{
-    height: 30px;
-    width: 10%;
-}
-
-
-/* Responsive */
-
-@media screen and (max-width: 760px){
-
-/* Type , taille de police et image de fond */
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    background-image: url(./pictures/fond.jpg);
-}
-
-/* Espacement et couleur des paragraphes */
-  p{
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: var(--white);
-}
-
-/* Alignement et couleur du texte , détail de la bordure , hauteur et longueur du header */
-  header{
-    text-align: center;
-    color: white;
-    border: 1px solid var(--lightblue);
-    height: 20vh;
-    width: 55vh;
-}
-
-/* Taille du h1 dans le header */
-  header h1{
-    font-size: 150%;
-  }
-
-/* Couleur et suppression du soulignement des " mots " cliquables */
-  #mobile-nav a{
-    color: var(--white);
-    text-decoration: none;
-  }
-
-/* Taille du texte des boutons */
-  .btn{
-    font-size: 50%;
-  }
-
-/* Les boutons sont invisibles sur mobile  */
-  .btn::before{
-    visibility: hidden;
-}
-
-/* La navbar du header est invisible sur mobile */
-  #header-nav{
-    visibility: hidden;
-}
-
-/* La navbar du mobile , visible , centrée et espacée. Taille et emplacement de la police */
-  #mobile-nav{
-    visibility: visible;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    padding-top: 60px;
-    text-align: center;
-    font-size: 1.1em;
-    margin-top: -5rem;
-  }
-  
-/* Espacement , taille , bordure et emplacement de ma photo */
-  #picture{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    max-width:350px;
-    height:auto;
-    border-radius: 100%;
-    display: flex;
-    transform:translateX(-50%);
-    margin-left: 50%;
-    
-}
-
-/* Espacement en dessous de compétences */
-  #competences{
-    margin-bottom: 2%;
-}
-
-/* Espacement au dessus et en dessous des logos HTML CSS etc */
-  .mobile-img{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 /* Couleur de fond, espacement et taille du footer */
 footer{
-  background-color: var(--lightgrey);
-  padding-bottom: 30px;
-  width: 56vh;
+background-color: var(--lightgrey);
+padding-bottom: 30px;
+width: 380px;
 }
 
 /* Taille des liens du footer */
 footer a{
-    font-size: 15px;
+  font-size: 15px;
+  color: black;
 }
 
 /* Taille du bloc message */
 textarea{
-  width: 90%;
+width: 90%;
 }
 
 /* Taille du bouton */
 #btnsub{
-  height: 30px;
-  width: 80%;
+height: 30px;
+width: 80%;
 }
 
-   
+ 
 }
 
+@media screen and (max-width: 590px){
+ 
+  header{
+    text-align: center;
+    color: white;
+    border: 3px solid var(--lightgrey);
+    height: 20vh;
+    width: 417px;
+  }
 
+  .btn{
+    font-size: medium;
+  }
 
+  footer{
+    background-color: var(--lightgrey);
+    padding-bottom: 30px;
+    width: 417px;
+    }
+
+}
