@@ -411,7 +411,7 @@ width: 80%;
  
   header{
     height: 20vh;
-    width: 27em;
+    width: 29em;
   }
   
   #picture{
@@ -425,7 +425,7 @@ width: 80%;
   footer{
     background-color: var(--lightgrey);
     padding-bottom: 30px;
-    width: 27em;
+    width: 29em;
     }
 
 }
