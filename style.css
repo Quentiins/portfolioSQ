@@ -31,6 +31,7 @@ header{
   color: white;
   border: 3px solid var(--lightgrey);
   height: 35vh;
+  width: 100%;
   }
 
 /* L'espace au dessus des h1 */
@@ -310,13 +311,6 @@ form{
 
 @media screen and (max-width: 760px){
 
-/* Type , taille de police et image de fond */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100%;
-  background-image: url(./pictures/fond.jpg);
-}
-
 /* Espacement et couleur des paragraphes */
 p{
 padding-top: 20px;
@@ -326,11 +320,7 @@ color: var(--white);
 
 /* Alignement et couleur du texte , détail de la bordure , hauteur et longueur du header */
 header{
-  text-align: center;
-  color: white;
-  border: 3px solid var(--lightgrey);
   height: 20vh;
-  width: 380px;
 }
 
 /* Taille du h1 dans le header */
@@ -399,18 +389,13 @@ header h1{
 footer{
 background-color: var(--lightgrey);
 padding-bottom: 30px;
-width: 380px;
+width: 100%;
 }
 
 /* Taille des liens du footer */
 footer a{
   font-size: 15px;
   color: black;
-}
-
-/* Taille du bloc message */
-textarea{
-width: 90%;
 }
 
 /* Taille du bouton */
@@ -422,14 +407,11 @@ width: 80%;
  
 }
 
-@media screen and (max-width: 590px){
+@media screen and (max-width: 600px){
  
   header{
-    text-align: center;
-    color: white;
-    border: 3px solid var(--lightgrey);
     height: 20vh;
-    width: 415px;
+    width: 26.6em;
   }
 
   .btn{
@@ -439,7 +421,7 @@ width: 80%;
   footer{
     background-color: var(--lightgrey);
     padding-bottom: 30px;
-    width: 415px;
+    width: 26.6em;
     }
 
 }
