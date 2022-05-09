@@ -429,7 +429,7 @@ width: 80%;
     color: white;
     border: 3px solid var(--lightgrey);
     height: 20vh;
-    width: 420px;
+    width: 415px;
   }
 
   .btn{
@@ -439,7 +439,7 @@ width: 80%;
   footer{
     background-color: var(--lightgrey);
     padding-bottom: 30px;
-    width: 420px;
+    width: 415px;
     }
 
 }
