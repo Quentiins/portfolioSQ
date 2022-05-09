@@ -413,6 +413,10 @@ width: 80%;
     height: 20vh;
     width: 25.5em;
   }
+  
+  body{
+    width: 100vw;
+  }
 
   .btn{
     font-size: medium;
