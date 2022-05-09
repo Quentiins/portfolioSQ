@@ -411,7 +411,7 @@ width: 80%;
  
   header{
     height: 20vh;
-    width: 20em;
+    width: 22em;
   }
 
   .btn{
@@ -421,7 +421,7 @@ width: 80%;
   footer{
     background-color: var(--lightgrey);
     padding-bottom: 30px;
-    width: 20em;
+    width: 22em;
     }
 
 }
