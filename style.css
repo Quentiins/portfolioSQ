@@ -414,8 +414,8 @@ width: 80%;
     width: 25.5em;
   }
   
-  body{
-    width: 100vw;
+  #picture{
+    max-width: 10em;
   }
 
   .btn{
